@@ -1,0 +1,9 @@
+---
+:backends:
+  - yaml
+
+:yaml:
+  :datadir: '/home/ubuntu/'
+
+:hierarchy:
+  - ngs-chipseq-aws

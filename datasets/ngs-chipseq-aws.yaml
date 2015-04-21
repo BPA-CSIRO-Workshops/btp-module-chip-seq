@@ -1,0 +1,35 @@
+btp::parent_path: '/mnt/workshop'
+btp::data_dir: 'data'
+btp::working_dir: 'working'
+btp::ubuntu_user: 'ubuntu'
+btp::trainee_user: 'trainee'
+btp::trainee_uid: 1001
+btp::trainee_gid: 1001
+
+btp::modules:
+  chipseq:
+    dirs:
+      - 'chipseq'
+      - 'chipseq/bowtie_index'
+      - 'chipseq/data'
+    data:
+      gfp.fastq: 
+        source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
+        targets: 
+          - 'chipseq/gfp.fastq'
+      Oct4.fastq: 
+        source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
+        targets: 
+          - 'chipseq/Oct4.fastq'
+      mm10.fa: 
+        source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
+        targets: 
+          - 'chipseq/bowtie_index/mm10.fa'
+      mouse.mm10.genome: 
+        source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
+        targets: 
+          - 'chipseq/bowtie_index/mouse.mm10.genome'
+      gfp.bam: 
+        source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
+        targets: 
+          - 'chipseq/data/gfp.bam'
