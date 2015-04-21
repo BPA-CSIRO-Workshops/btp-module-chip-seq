@@ -3,7 +3,7 @@
   - yaml
 
 :yaml:
-  :datadir: '/home/ubuntu/'
+  :datadir: '/etc/puppet/'
 
 :hierarchy:
   - ngs-chipseq
