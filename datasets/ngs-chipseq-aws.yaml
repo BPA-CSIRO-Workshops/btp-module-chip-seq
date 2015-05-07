@@ -12,6 +12,7 @@ btp::modules:
       - 'chipseq'
       - 'chipseq/bowtie_index'
       - 'chipseq/data'
+      - 'chipseq/Data'
     data:
       gfp.fastq: 
         source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
@@ -33,3 +34,11 @@ btp::modules:
         source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
         targets: 
           - 'chipseq/data/gfp.bam'
+      Homo_sapiens.GRCh37.64.gtf: 
+        source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
+        targets: 
+          - 'chipseq/Data/Homo_sapiens.GRCh37.64.gtf'
+      Mus_musculus.NCBIM37.64.gtf: 
+        source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
+        targets: 
+          - 'chipseq/Data/Mus_musculus.NCBIM37.64.gtf'
