@@ -6,4 +6,4 @@
   :datadir: '/etc/puppet/'
 
 :hierarchy:
-  - ngs-chipseq
+  - ngs-chipseq-data-aws
