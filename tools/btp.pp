@@ -39,16 +39,6 @@ class btp::analysis_tools {
   create_resources(workshop_analysis_tools, $analysis_tools)
 }
 
-class btp::system_packages($list=[]) {
-  package { $list:
-    ensure => present,
-  }
-}
-
-node image {
-  include btp::system_packages
-}
-
-node instance {
+node default {
   include btp::analysis_tools
 }
