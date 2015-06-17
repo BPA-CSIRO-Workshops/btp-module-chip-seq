@@ -12,7 +12,9 @@ btp::modules:
       - 'chipseq'
       - 'chipseq/bowtie_index'
       - 'chipseq/data'
-      - 'chipseq/Data'
+      - 'chipseq/peakanalyzer'
+      - 'chipseq/peakanalyzer/1.4'
+      - 'chipseq/peakanalyzer/1.4/Data'
     data:
       gfp.fastq: 
         source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
@@ -34,11 +36,23 @@ btp::modules:
         source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
         targets: 
           - 'chipseq/data/gfp.bam'
+      PeakAnalyzer.jar: 
+        source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
+        targets: 
+          - 'chipseq/peakanalyzer/1.4/PeakAnalyzer.jar'
+      PeakAnalyzerGUI.jar: 
+        source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
+        targets: 
+          - 'chipseq/peakanalyzer/1.4/PeakAnalyzerGUI.jar'
+      README: 
+        source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
+        targets: 
+          - 'chipseq/peakanalyzer/1.4/README'
       Homo_sapiens.GRCh37.64.gtf: 
         source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
         targets: 
-          - 'chipseq/Data/Homo_sapiens.GRCh37.64.gtf'
+          - 'chipseq/peakanalyzer/1.4/Data/Homo_sapiens.GRCh37.64.gtf'
       Mus_musculus.NCBIM37.64.gtf: 
         source: 'https://s3-ap-southeast-2.amazonaws.com/ngs-data-chipseq'
         targets: 
-          - 'chipseq/Data/Mus_musculus.NCBIM37.64.gtf'
+          - 'chipseq/peakanalyzer/1.4/Data/Mus_musculus.NCBIM37.64.gtf'
