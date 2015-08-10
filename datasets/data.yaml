@@ -12,7 +12,9 @@ btp::modules:
       - 'chipseq'
       - 'chipseq/bowtie_index'
       - 'chipseq/data'
-      - 'chipseq/Data'
+      - 'chipseq/peakanalyzer'
+      - 'chipseq/peakanalyzer/1.4'
+      - 'chipseq/peakanalyzer/1.4/Data'
     data:
       gfp.fastq: 
         source: 'https://swift.rc.nectar.org.au:8888/v1/AUTH_809/NGSDataChIPSeq'
@@ -34,11 +36,23 @@ btp::modules:
         source: 'https://swift.rc.nectar.org.au:8888/v1/AUTH_809/NGSDataChIPSeq'
         targets: 
           - 'chipseq/data/gfp.bam'
+      PeakAnalyzer.jar: 
+        source: 'https://swift.rc.nectar.org.au:8888/v1/AUTH_809/NGSDataChIPSeq'
+        targets: 
+          - 'chipseq/peakanalyzer/1.4/PeakAnalyzer.jar'
+      PeakAnalyzerGUI.jar: 
+        source: 'https://swift.rc.nectar.org.au:8888/v1/AUTH_809/NGSDataChIPSeq'
+        targets: 
+          - 'chipseq/peakanalyzer/1.4/PeakAnalyzerGUI.jar'
+      README: 
+        source: 'https://swift.rc.nectar.org.au:8888/v1/AUTH_809/NGSDataChIPSeq'
+        targets: 
+          - 'chipseq/peakanalyzer/1.4/README'
       Homo_sapiens.GRCh37.64.gtf: 
         source: 'https://swift.rc.nectar.org.au:8888/v1/AUTH_809/NGSDataChIPSeq'
         targets: 
-          - 'chipseq/Data/Homo_sapiens.GRCh37.64.gtf'
+          - 'chipseq/peakanalyzer/1.4/Data/Homo_sapiens.GRCh37.64.gtf'
       Mus_musculus.NCBIM37.64.gtf: 
         source: 'https://swift.rc.nectar.org.au:8888/v1/AUTH_809/NGSDataChIPSeq'
         targets: 
-          - 'chipseq/Data/Mus_musculus.NCBIM37.64.gtf'
+          - 'chipseq/peakanalyzer/1.4/Data/Mus_musculus.NCBIM37.64.gtf'
