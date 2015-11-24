@@ -1,4 +1,4 @@
 btp::analysis_tools:
-  macs_1.4.2-0_amd64.deb:
+  macs_1.4.2-1_amd64.deb:
     source: 'https://swift.rc.nectar.org.au:8888/v1/AUTH_809/Tools'
     provider: 'dpkg'
