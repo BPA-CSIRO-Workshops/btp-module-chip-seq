@@ -14,7 +14,7 @@ Bioinformatics Training Platform (BTP) Module: ChIP-Seq
     * Visualize the peak regions through a genome browser, e.g. Ensembl, and identify the real peak regions.
     * Perform functional annotation and detect potential binding sites (motif),in the predicted binding regions using motif discovery tool, e.g. MEME.
   * Time Required
-    * 
+    * 3.5 hrs
   * Compute Requirements
     * 
 
