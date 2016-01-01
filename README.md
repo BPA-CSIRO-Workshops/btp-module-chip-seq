@@ -15,8 +15,6 @@ Bioinformatics Training Platform (BTP) Module: ChIP-Seq
     * Perform functional annotation and detect potential binding sites (motif),in the predicted binding regions using motif discovery tool, e.g. MEME.
   * Time Required
     * 3.5 hrs
-  * Compute Requirements
-    * 
 
 License
 =======
