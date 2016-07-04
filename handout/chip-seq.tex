@@ -5,7 +5,8 @@
   Myrto Kostadima \mailto{kostadim@ebi.ac.uk}
 }
 \setModuleContributions{%
-  Xi Li \mailto{sean.li@csiro.au}%
+  Xi Li \mailto{sean.li@csiro.au} \\
+  Sonika Tyagi \mailto{sonika.tyagi@agrf.org.au}
 }
 
 %  Start: Module Title Page
@@ -178,8 +179,26 @@ Choose the genome of interest (in this case, mouse) on the left side of the
 page, browse to any location in the genome or click one of the demo links
 provided on the web page.
 
+%\includegraphics[width=\trainerIconWidth]{../photos/MoustHome.pdf}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{MouseHome.png}
+\caption{Ensembl Mouse Homepage}
+\label{fig:MouseHome}
+\end{figure}
+
+
+
 Click on the \textbf{Add your data} link on the left, then choose
 \textbf{Add your data} in the \textbf{Custom Data} tab.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{AddData.png}
+\caption{Click Add your data link}
+\label{fig:AddData}
+\end{figure}
 
 \end{steps}
 
@@ -200,11 +219,20 @@ browser. They are at the following URL:
 
 To visualise the data:
 \begin{itemize}
-	\item Paste the location above in the field File URL. 
-	\item Choose data format bigWig. 
-	\item Choose some informative name and in the next window choose the colour of your preference. 
+	\item Paste the location above in the Data field. 
+	\item Set data format bigWig. 
+	\item Choose some informative name
+        \item Click Add data and in the next window choose the colour of your preference. 
 	\item Click \textbf{Save} and close the window to return to the genome browser. 
 \end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{UploadURL.png}
+\caption{Upload the bigWig file to Ensembl}
+\label{fig:UploadURL}
+\end{figure}
+
 Repeat the process for the gfp control sample, located at:
 
 \url{http://www.ebi.ac.uk/~remco/ChIP-Seq_course/gfp.bw} (Please right click and choose ``Copy Link Address'' to copy the URL).
@@ -217,6 +245,13 @@ After uploading, to make sure your data is visible:
         \item Closing the window will save these changes.
 
 \end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{ConfigureYourData.png}
+\caption{Make sure your uploaded data are visible in the browser}
+\label{fig:ConfigureYourData}
+\end{figure}
 
 Go to a region on chromosome 1 (e.g. \texttt{1:34823162-35323161}), and zoom in and out
 to view the signal and peak regions. Be aware that the y-axis of each track is auto-scaled independently of each other,

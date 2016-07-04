@@ -1,5 +1,21 @@
 # btp-module-chip-seq
 Bioinformatics Training Platform (BTP) Module: ChIP-Seq
+
+  * Topic
+    * ChIP-Seq
+  * Target Audience
+    * Biologists
+	* Non-bioinformaticians
+	* Little to no programming expereience
+  * Prerequisites
+    * [btp-module-ngs-mapping](https://github.com/BPA-CSIRO-Workshops/btp-module-ngs-mapping)
+  * Key Learning Outcomes
+    * Perform simple ChIP-Seq analysis, e.g. the detection of immuno-enriched areas using the chosen peak caller program MACS.
+    * Visualize the peak regions through a genome browser, e.g. Ensembl, and identify the real peak regions.
+    * Perform functional annotation and detect potential binding sites (motif),in the predicted binding regions using motif discovery tool, e.g. MEME.
+  * Time Required
+    * 3.5 hrs
+
 License
 =======
 The contents of this repository are released under the Creative Commons
