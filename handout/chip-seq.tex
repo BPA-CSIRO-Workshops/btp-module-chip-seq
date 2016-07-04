@@ -64,10 +64,8 @@ annotation and motif analysis on the predicted binding regions.
 \section{Prepare the Environment}
 
 \begin{information}
-The material for this practical can be found in the \texttt{ChIP-seq} directory on your
-desktop. This directory also contains an electronic version of this document,
-which can be useful to copy and paste commands. Please make sure that this
-directory also contains the SAM/BAM files you produced during the alignment
+The material for this practical can be found in the \texttt{ChIP-seq} section of your manual.
+Please make sure that this directory also contains the SAM/BAM files you produced during the alignment
 practical.
 \end{information}
 
@@ -239,7 +237,8 @@ Repeat the process for the gfp control sample, located at:
 
 After uploading, to make sure your data is visible:
 \begin{itemize}
-        \item Switch to the \textbf{Configure Region Image} tab
+	\item Click in the left hand panel \textbf{Configure this page}
+        \item Select the first tab in the pop up \textbf{Configure Region Image}
         \item Click \textbf{Your data} in the left panel
         \item Choose each of the uploaded *.bw files to confirm the \textbf{Wiggle plot} in \textbf{Change track style} pop up menu has been choosen.
         \item Closing the window will save these changes.
@@ -316,6 +315,7 @@ Launch the PeakAnalyzer program by typing:
 java -jar PeakAnalyzer.jar &
 \end{lstlisting}
 
+Click okay in the pop up  error message "Can't reach ensembl.org"
 The first window allows you to choose between the split application (which we
 will try next) and peak annotation. Choose the peak annotation option and click
 \textbf{Next}.
@@ -360,7 +360,7 @@ cut -f 5 Oct4_peaks.ndg.bed | sed '1 d' > Oct4_peaks.ndg.tid
 \section{Motif analysis}
 
 \begin{information}
-It is often interesting to find out whether we can associate identified the
+It is often interesting to find out whether we can associate the identified 
 binding sites with a sequence pattern or motif. We will use MEME for motif
 analysis. The input for MEME should be a file in FASTA format containing the
 sequences of interest. In our case, these are the sequences of the identified
@@ -371,8 +371,8 @@ resulting peaks tend to be much wider than the actual binding sites.
 Sub-dividing the enriched areas by accurately partitioning enriched loci into a
 finer-resolution set of individual binding sites, and fetching sequences from
 the summit region where binding motifs are most likely to appear enhances the
-quality of the motif analysis. Sub-peak summit sequences can be retrieved
-directly from the Ensembl database using PeakAnalyzer.
+quality of the motif analysis. Sub-peak summit sequences can normally be retrieved
+directly from the Ensembl database using PeakAnalyzer. Due to the connection error we have provided the fasta sequences.
 \end{information}
 
 \begin{steps}
@@ -412,28 +412,28 @@ the highest sub-peaks.
 
 \begin{steps}
 Open a web bowser and go to the MEME website at
-\url{http://meme.ebi.edu.au/meme/tools/meme}, and fill in the necessary
+\url{http://meme-suite.org/tools/meme-chip}, and fill in the necessary
 details, such as:
 \begin{itemize}
 	\item Your e-mail address 
 	\item The sub-peaks FASTA file \texttt{Oct4\_peaks.bestSubPeaks.fa} (will need uploading), or just paste in the sequences 
+	\item Select the Jaspar vertebrates and UniPROBE Mosue data base
+	\item Under the MEME options section enter the following:
 	\item The number of motifs we expect to find (1 per sequence) 
 	\item The maximum number of motifs to find (3 by default). For Oct4 one classical motif is known 
-	\item Click the \texttt{Advanced options}, the width of the desired motif (between 6 to 20)
+	\item Set the width of the desired motif (between 6 to 20)
 \end{itemize}
 \end{steps}
 
 \begin{note}
-You will receive the results by e-mail. This usually doesn't take more than a few minutes.
+The html link will be returned on completion and you will also receive the results by e-mail. This usually doesn't take more than a few minutes.
 \end{note}
 
 \begin{steps}
-Open the e-mail and click on the link that leads to the HTML results page.
+Open the link that leads to the HTML results page.
 
 Scroll down until you see the first motif logo. We would like to know if this
-motif is similar to any other known motif. We will use TOMTOM for this. Click the right arrow under \texttt{Submit/Download}, and you will see the option \textbf{Tomtom} chosen by default. Click the Submit
-button to compare to known motifs in motif databases, and on the new page choose
-to compare your motif to those in the ``JASPAR Vertebrates and UniPROBE Mouse''database.
+motif is similar to any other known motif. Scroll down to the TOMTOM html results.
 \end{steps}
 
 
