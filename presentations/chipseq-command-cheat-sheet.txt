@@ -1,0 +1,53 @@
+
+#Go to the folder
+cd ~/chipseq
+
+#explore Macs options
+macs --help
+
+#run Macs
+
+macs -t Oct4.sorted.bam \
+-c gfp.sorted.bam \
+--format=BAM \
+--name=Oct4 \
+--gsize=138000000 \
+--tsize=26 \
+--diag \
+--wig
+
+#Open ensembl
+
+#URLs
+http://www.ebi.ac.uk/~remco/ChIP-Seq_course/Oct4.bw
+http://www.ebi.ac.uk/~remco/ChIP-Seq_course/gfp.bw
+
+http://www.ebi.ac.uk/~remco/ChIP-Seq_course/H3K4me3.bw
+
+
+#Peak Annotation using Peak Analyzer
+
+cd ~/chipseq/peakanalyzer/1.4
+
+# Launch the PeakAnalyzer program by typing:
+
+java -jar PeakAnalyzer.jar &
+
+
+cut -f 5 Oct4_peaks.ndg.bed | sed '1 d' > Oct4_peaks.ndg.tid
+
+#Don’t run this command
+#bedtools getfasta -fi bowtie_index/mm10.fa -bed Oct4_peaks.subpeaks.summit.bed -fo Oct4_peaks.bestSubPeaks.fa
+
+http://meme.ebi.edu.au/meme/tools/meme
+http://meme-suite.org/doc/overview.html
+http://meme-suite.org/tools/meme-chip
+
+#Under MEME options
+What is the expected motif site distribution?
+What width motifs should MEME find?
+
+Check your “Recent Jobs”
+
+Scroll down to programs and click tomtom html
+Jaspar vertebrates and UniPROBE Mouse
