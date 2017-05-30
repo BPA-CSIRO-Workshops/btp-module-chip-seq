@@ -10,7 +10,8 @@ Bioinformatics Training Platform (BTP) Module: ChIP-Seq
   * Prerequisites
     * [btp-module-ngs-mapping](https://github.com/BPA-CSIRO-Workshops/btp-module-ngs-mapping)
   * Key Learning Outcomes
-    	*  Perform ChIP-Seq analysis, e.g. the detection of immuno-enriched areas using the chosen R package: ChIP-seq processing pipeline (SPP) 
+  
+    	*  Perform ChIP-Seq analysis, e.g. the detection of immuno-enriched areas using the chosen R package: ChIP-seq processing pipeline 		(SPP) 
   	*  Visualize the peak regions through a genome browser, e.g. IGV or Ensembl, and identify the real peak regions
   	*  Perform functional annotation using biomaRt R package and detect potential binding sites (motif) in the predicted binding regions using motif discovery tool, e.g. Trawler or MEME.
 
